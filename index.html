@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
     integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -44,7 +47,8 @@
       <a href="/login">Sign In / Sign Up</a>
     </div>
   </nav>
-  <article class="container mt-3">
+  <!-- Alert -->
+  <!-- <div class="container alert-container">
     <div class="row d-none d-sm-block">
       <div class="col-12">
         <div class="alert alert-warning">
@@ -53,25 +57,33 @@
         </div>
       </div>
     </div>
-    <!-- Callout -->
-    <div class="row">
-      <div class="col-12">
-        <section class="callout jumbotron text-center">
-          <h1>The finest whiskeys delivered to your doorstep.</h1>
-          <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s
-              class="d-none d-sm-inline">€19.99</s>
-            <span class="d-inline d-sm-none"><br></span>
-            <strong><mark>First one is free!</mark></strong></p>
-          <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
-          <p class="text-muted"><small>You must be over 18 to sign up to our service. Please, drink responsibly</small>
-          </p>
-        </section>
-      </div>
+  </div> -->
+  <!-- /.alert -->
+  <!-- Callout -->
+  <div class="container-fluid callout-container">
+    <div class="opaque-overlay">%nbsp;</div>
+      <div class="row">
+        <div class="col-12">
+          <section class="callout jumbotron text-center">
+            <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
+            <hr class="block-divider block-divider--orange">
+            <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s
+                class="d-none d-sm-inline">€19.99</s>
+              <span class="d-inline d-sm-none"><br></span>
+              <strong><mark>First one is free!</mark></strong></p>
+            <button class="btn btn--cta btn--red btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
+            <p class="text-muted"><small>You must be over 18 to sign up to our service. Please, drink
+                responsibly</small>
+            </p>
+          </section>
+        </div>
     </div>
-    <!-- /.callout -->
-    <hr>
+  </div>
+  <!-- /.callout -->
 
-    <!-- Quotes -->
+
+  <!-- Quotes -->
+  <div class="container quotes-container">
     <section class="quotes">
       <div class="row">
         <div class="col-12 my-5">
@@ -107,9 +119,10 @@
         </div>
     </section>
     <!-- /.quotes -->
-    <hr>
+  </div>
 
-    <!-- Features -->
+  <!-- Features -->
+  <div class="features-container container">
     <section class="features">
       <div class="row">
         <div class="col-12 my-5">
@@ -148,49 +161,48 @@
       </div>
     </section>
     <!-- /.features -->
-    <hr>
+  </div>
 
-    <!-- Monthly Favourites -->
-    <section>
-      <div class="col-12 my-5">
-        <h2 class="text-uppercase">Monthly Favourites:</h2>
-      </div>
-      <div>
-        <table class="table">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Name</th>
-              <th scope="col">Origin</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Whiskey 1</td>
-              <td>Japan</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Whiskey 2</td>
-              <td>Scotland</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Whiskey 3</td>
-              <td>Ireland</td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>Whiskey 4</td>
-              <td>America</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-    <!-- /.monthly favourites -->
-  </article>
+  <!-- Monthly Favourites -->
+  <section class="container">
+    <div class="col-12 my-5">
+      <h2 class="text-uppercase">Monthly Favourites:</h2>
+    </div>
+    <div>
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Origin</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Whiskey 1</td>
+            <td>Japan</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Whiskey 2</td>
+            <td>Scotland</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Whiskey 3</td>
+            <td>Ireland</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Whiskey 4</td>
+            <td>America</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <!-- /.monthly favourites -->
 
   <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
     <div class="modal-dialog" role="document">
@@ -205,7 +217,8 @@
           <form>
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
@@ -216,7 +229,7 @@
               <label for="repeatPassword" id="repeatPassword">Repeat Password</label>
               <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Repeat Password">
             </div>
-            
+
             <button type="submit" class="btn btn-success">Submit</button>
           </form>
         </div>
